@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-21T15:11:44 IST" name="Suite" finished-at="2025-03-21T15:12:43 IST" duration-ms="59247">
+    <groups>
+    </groups>
+    <test started-at="2025-03-21T15:11:44 IST" name="Test" finished-at="2025-03-21T15:12:43 IST" duration-ms="59247">
+      <class name="testcases.RegisterTestForNewUser">
+        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.RegisterTestForNewUser@4a7f959b]" started-at="2025-03-21T15:11:44 IST" name="readData" finished-at="2025-03-21T15:11:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="testRegisterPage(java.lang.String)[pri:1, instance:testcases.RegisterTestForNewUser@4a7f959b]" started-at="2025-03-21T15:11:44 IST" name="testRegisterPage" finished-at="2025-03-21T15:11:59 IST" duration-ms="14954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.RegisterTestForNewUser@4a7f959b]" started-at="2025-03-21T15:12:41 IST" name="closeBrowser" finished-at="2025-03-21T15:12:43 IST" duration-ms="2084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.RegisterTestForNewUser -->
+      <class name="testcases.RegisterTest">
+        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.RegisterTest@429bffaa]" started-at="2025-03-21T15:11:44 IST" name="readData" finished-at="2025-03-21T15:11:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="testRegisterPage(java.lang.String)[pri:1, instance:testcases.RegisterTest@429bffaa]" started-at="2025-03-21T15:11:59 IST" name="testRegisterPage" finished-at="2025-03-21T15:12:08 IST" duration-ms="9409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.RegisterTest@429bffaa]" started-at="2025-03-21T15:12:39 IST" name="closeBrowser" finished-at="2025-03-21T15:12:41 IST" duration-ms="2034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.RegisterTest -->
+      <class name="testcases.LoginPageTest">
+        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.LoginPageTest@5403f35f]" started-at="2025-03-21T15:11:44 IST" name="readData" finished-at="2025-03-21T15:11:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="loginTest(java.lang.String)[pri:0, instance:testcases.LoginPageTest@5403f35f]" started-at="2025-03-21T15:12:08 IST" name="loginTest" finished-at="2025-03-21T15:12:17 IST" duration-ms="8560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LoginPageTest@5403f35f]" started-at="2025-03-21T15:12:37 IST" name="closeBrowser" finished-at="2025-03-21T15:12:39 IST" duration-ms="2083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.LoginPageTest -->
+      <class name="testcases.AddToCartJewelryTest">
+        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.AddToCartJewelryTest@483f6d77]" started-at="2025-03-21T15:11:44 IST" name="readData" finished-at="2025-03-21T15:11:44 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="purchaseJewelry(java.lang.String)[pri:0, instance:testcases.AddToCartJewelryTest@483f6d77]" started-at="2025-03-21T15:12:17 IST" name="purchaseJewelry" finished-at="2025-03-21T15:12:34 IST" duration-ms="16957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseJewelry -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.AddToCartJewelryTest@483f6d77]" started-at="2025-03-21T15:12:34 IST" name="closeBrowser" finished-at="2025-03-21T15:12:37 IST" duration-ms="2873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.AddToCartJewelryTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
