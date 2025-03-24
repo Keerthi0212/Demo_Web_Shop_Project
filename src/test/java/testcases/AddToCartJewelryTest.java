@@ -17,12 +17,14 @@ import com.aventstack.extentreports.Status;
 
 import base.BaseClass;
 import pages.AddToCartJewelryPage;
+import pages.CheckOutPage;
 import pages.HomePage;
 import utility.ExtentReport;
 
 public class AddToCartJewelryTest extends BaseClass {
 
 	String url;
+	
 	@BeforeTest
 	public void readData() throws IOException
 	{
@@ -32,7 +34,7 @@ public class AddToCartJewelryTest extends BaseClass {
 		url = prop.getProperty("url");
 		ExtentReport.getInstance();
 	}
-	@Test
+	@Test(priority=1)
 	@Parameters({"browser"})
 	public void purchaseJewelry(String browser) throws InterruptedException, IOException {
 		invokeBrowser(browser);
@@ -74,7 +76,7 @@ public class AddToCartJewelryTest extends BaseClass {
 		}
 		
 	}
-	
+
 	@AfterTest
 	public void closeBrowser() throws InterruptedException {
 		Thread.sleep(2000);

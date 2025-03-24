@@ -1,5 +1,6 @@
 Feature: feature is to check the functionality of Demo Web Shop
-Scenario: validate the login functionality with Invalid credentials
+@login
+Scenario Outline: validate the login functionality with Invalid credentials
 Given Open Browser
 Then user enters into "<url>" Demo Web Shop
 And user should enter "<email>" in email text box

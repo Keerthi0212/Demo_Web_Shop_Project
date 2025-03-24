@@ -1,6 +1,7 @@
 package pages;
 
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,7 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddToCartJewelryPage {
 	WebDriver driver;
@@ -26,7 +29,8 @@ public class AddToCartJewelryPage {
 	private By successMsg = By.xpath("//p[@class='content']");
 	//second product details
 	private By product2 = By.xpath("(//input[@type='button' and @value='Add to cart'])[1]");
-	private By matieral = By.id("product_attribute_71_9_15");
+	//private By product2 = By.xpath("//div[@class='master-wrapper-content']//div[1]//div[1]//div[2]//div[3]//div[2]//input[1]");
+	private By material = By.id("product_attribute_71_9_15");
 	private By length = By.xpath("//input[@name='product_attribute_71_10_16' ]");
 	private By quantity = By.id("addtocart_71_EnteredQuantity");
 	private By ladyBug = By.xpath("//input[@id='product_attribute_71_11_17_48' ]");
@@ -35,6 +39,7 @@ public class AddToCartJewelryPage {
 	@FindBy (xpath ="//input[@id='product_attribute_71_11_17_49' ]") WebElement heart;
 	@FindBy (xpath ="//input[@id='product_attribute_71_11_17_50' ]") WebElement star;
 	@FindBy (xpath ="//input[@id='product_attribute_71_11_17_51' ]") WebElement none;
+	
 	
 	public WebElement selectSortBy() {
 		return driver.findElement(sortBy);		
@@ -66,10 +71,14 @@ public class AddToCartJewelryPage {
 		return driver.findElement(successMsg);
 	}
 	public void addSecProductToCart() {
-		driver.findElement(product2).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(product2));
+		//driver.findElement(product2).click();
+        element.click();
 	}
 	public WebElement selectMaterial() {
-		return driver.findElement(matieral);
+		return driver.findElement(material);
+        
 	}
 	public void enterLength() {
 		driver.findElement(length).sendKeys("5");
@@ -86,8 +95,12 @@ public class AddToCartJewelryPage {
 		}
 	}
 	public WebElement enterQuantity() {
-		return driver.findElement(quantity);
-	}
+		//explicit wait 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(quantity));
+		//return driver.findElement(quantity);	
+        return element;
+		}
 	public void addToCartSec() {
 		driver.findElement(addToCart).click();
 	}
