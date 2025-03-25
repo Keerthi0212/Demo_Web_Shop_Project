@@ -21,21 +21,13 @@ import pages.LoginPageInvalid;
 import utility.ExtentReport;
 
 public class LoginSteps extends BaseClass{
-	static LoginPageInvalid lp;
-	public static  void login() {
-		lp=new LoginPageInvalid(driver);
-	}
-	
-	@Given("Open Browser")
-	public void open_browser() {
-	   invokeBrowser("chrome");
-	}
+	LoginPageInvalid lp;
 
 	@Then("user enters into {string} Demo Web Shop")
 	public void user_enters_into_demo_web_shop(String url) {
 		driver.get(url);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	    login();
+	    lp=new LoginPageInvalid(driver);
 	    lp.clickOnLoginPage();
 	    ExtentReport.getInstance();
 	}
@@ -69,11 +61,5 @@ public class LoginSteps extends BaseClass{
 	   }
 	}
 
-	@And("close the browser")
-	public void close_the_browser() throws InterruptedException {
-	   Thread.sleep(2000);
-	   driver.close();
-	   ExtentReport.getInstance().flush();
-	}
 
 }

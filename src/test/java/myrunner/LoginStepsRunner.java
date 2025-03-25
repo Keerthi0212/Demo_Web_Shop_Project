@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src\\test\\java\\features\\login.feature",
-		glue="stepdef",
+		glue={"stepdef","hooks"},
 		plugin = { "pretty","html:target/cucumber-reports.html"}, 
 		tags = "@login", 
 		monochrome=false)

@@ -4,12 +4,15 @@
   <test thread-count="5" name="Test">
    <parameter name = "browser" value="chrome"></parameter>
         <classes>
-            <!-- <class name="testcases.RegisterTestForNewUser" /> --> 
-           <!--  <class name="testcases.RegisterTest" /> 
-            <class name="testcases.LoginPageTest" /> -->
+          <!--   <class name="testcases.RegisterTestForNewUser" />  -->
+            <class name="testcases.RegisterTest" /> 
+            <class name="testcases.LoginPageTest" />
             <class name="myrunner.LoginStepsRunner" />
-			<!-- <class name="testcases.AddToCartJewelryTest" /> --> 
-			<!-- <class name="testcases.CheckOutPageTest" />  -->
+            <class name="testcases.SearchAndAddToCartTest" />
+			<class name="testcases.AddToCartJewelryTest" /> 
+			<class name="testcases.CheckOutPageTest" />
+			 <class name="myrunner.RemoveJewelryFromCartRunner" />
+			 <class name="testcases.LogoutWithValidLogin" />
 		</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -65,11 +65,7 @@ public class RegisterPage {
 		return driver.findElement(msg);
 	}
 	public WebElement unsuccessMsg(){
-		return driver.findElement(errorMsg);
-		
-	}
-	
-	
-	
+		return driver.findElement(errorMsg);		
+	}	
 
 }

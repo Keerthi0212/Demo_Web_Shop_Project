@@ -6,6 +6,8 @@
     <classes>
       <class name="testcases.AddToCartJewelryTest">
         <methods>
+          <include name="clearAllureResults"/>
+          <include name="generateAllureReport"/>
           <include name="purchaseJewelry" invocation-numbers="0"/>
           <include name="closeBrowser"/>
           <include name="readData"/>

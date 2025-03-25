@@ -13,6 +13,7 @@ public class HomePage {
 	private By registerBtn = By.xpath("//input[@class='button-1 register-button']");
 	private By loginBtn = By.xpath("//a[@class='ico-login' ]");
 	private By jewelry = By.cssSelector("a[href='/jewelry']");
+	private By logout = By.xpath("//a[@class='ico-logout']");
 	
 	public void clickOnRegisterBtn() {
 		driver.findElement(registerBtn).click();
@@ -24,6 +25,10 @@ public class HomePage {
 	
 	public void clickOnJewelry() {
 		driver.findElement(jewelry).click();
+	}
+
+	public void clickOnLogout() {
+		driver.findElement(logout).click();
 	}
 	
 

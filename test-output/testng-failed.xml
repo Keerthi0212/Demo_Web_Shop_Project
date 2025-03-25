@@ -6,7 +6,10 @@
     <classes>
       <class name="testcases.CheckOutPageTest">
         <methods>
+          <include name="clearAllureResults"/>
           <include name="readData"/>
+          <include name="generateAllureReport"/>
+          <include name="closeBrowser"/>
           <include name="checkOutTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcases.CheckOutPageTest -->

@@ -32,14 +32,14 @@ public class CheckOutPage {
 	public void clickOnCart() {
 		shoppingCart.click();
 	}
-	public void enterCoupon() {
-		coupon.sendKeys("FIRST");
+	public void enterCoupon(String coup) {
+		coupon.sendKeys(coup);
 	}
 	public void clickOnCoupon() {
 		applyCoupon.click();
 	}
-	public void enterGiftCode() {
-		giftCard.sendKeys("505");
+	public void enterGiftCode(String giftCode) {
+		giftCard.sendKeys(giftCode);
 	}
 	public void clickOnGiftCard() {
 		addGift.click();
@@ -56,8 +56,9 @@ public class CheckOutPage {
 		s.selectByIndex(0);
 	}
 	
-	public void enterPincode() {
-		pincode.sendKeys("516002");
+	public void enterPincode(String pin) {
+		pincode.clear();
+		pincode.sendKeys(pin);
 	}
 	public void clickOnEstimateShip() {
 		estimateShip.click();
