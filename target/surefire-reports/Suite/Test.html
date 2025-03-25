@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 26 01:15:15 IST 2025</td>
+<td>Started on:</td><td>Wed Mar 26 01:33:08 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>133 seconds (133295 ms)</td>
+<tr><td>Total time:</td><td>133 seconds (133440 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,76 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.SearchAndAddToCartTest.closeBrowser()'><b>closeBrowser</b><br>Test class: testcases.SearchAndAddToCartTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61504/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
-	at testcases.SearchAndAddToCartTest.closeBrowser(SearchAndAddToCartTest.java:74)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303471735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1303471735'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61504/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
-	at testcases.SearchAndAddToCartTest.closeBrowser(SearchAndAddToCartTest.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-	at org.testng.TestRunner.afterRun(TestRunner.java:849)
-	at org.testng.TestRunner.run(TestRunner.java:590)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-</pre></div></td>
-<td>2</td>
-<td>testcases.SearchAndAddToCartTest@7d3d101b</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -147,43 +77,43 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 <tr>
 <td title='testcases.CheckOutPageTest.checkOutTest()'><b>checkOutTest</b><br>Test class: testcases.CheckOutPageTest<br>Parameters: chrome</td>
 <td></td>
-<td>38</td>
-<td>testcases.CheckOutPageTest@5cdec700</td></tr>
+<td>36</td>
+<td>testcases.CheckOutPageTest@54a7079e</td></tr>
 <tr>
 <td title='testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: testcases.LoginPageTest<br>Parameters: chrome</td>
 <td></td>
-<td>7</td>
-<td>testcases.LoginPageTest@6cdba6dc</td></tr>
+<td>8</td>
+<td>testcases.LoginPageTest@201a4587</td></tr>
 <tr>
 <td title='testcases.LogoutWithValidLogin.logoutTest()'><b>logoutTest</b><br>Test class: testcases.LogoutWithValidLogin<br>Parameters: chrome</td>
 <td></td>
 <td>8</td>
-<td>testcases.LogoutWithValidLogin@6d026701</td></tr>
+<td>testcases.LogoutWithValidLogin@26e356f0</td></tr>
 <tr>
 <td title='testcases.AddToCartJewelryTest.purchaseJewelry()'><b>purchaseJewelry</b><br>Test class: testcases.AddToCartJewelryTest<br>Parameters: chrome</td>
 <td></td>
 <td>15</td>
-<td>testcases.AddToCartJewelryTest@30c8681</td></tr>
+<td>testcases.AddToCartJewelryTest@4310d43</td></tr>
 <tr>
 <td title='myrunner.LoginStepsRunner.runScenario()'><b>runScenario</b><br>Test class: myrunner.LoginStepsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the login functionality with Invalid credentials", "feature is to check the functionality of Demo Web Shop"</td>
 <td></td>
-<td>10</td>
-<td>myrunner.LoginStepsRunner@78aa1f72</td></tr>
+<td>8</td>
+<td>myrunner.LoginStepsRunner@47d9a273</td></tr>
 <tr>
 <td title='myrunner.RemoveJewelryFromCartRunner.runScenario()'><b>runScenario</b><br>Test class: myrunner.RemoveJewelryFromCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To remove product from cart", "To check the functionality of removing Product From Cart"</td>
 <td></td>
-<td>18</td>
-<td>myrunner.RemoveJewelryFromCartRunner@1f75a668</td></tr>
+<td>19</td>
+<td>myrunner.RemoveJewelryFromCartRunner@4b8ee4de</td></tr>
 <tr>
 <td title='testcases.RegisterTest.testRegisterPage()'><b>testRegisterPage</b><br>Test class: testcases.RegisterTest<br>Parameters: chrome</td>
 <td></td>
-<td>10</td>
-<td>testcases.RegisterTest@1ae8bcbc</td></tr>
+<td>12</td>
+<td>testcases.RegisterTest@47e2e487</td></tr>
 <tr>
 <td title='testcases.SearchAndAddToCartTest.testSearchAndAddToCart()'><b>testSearchAndAddToCart</b><br>Test class: testcases.SearchAndAddToCartTest<br>Parameters: chrome</td>
 <td></td>
 <td>10</td>
-<td>testcases.SearchAndAddToCartTest@7d3d101b</td></tr>
+<td>testcases.SearchAndAddToCartTest@61001b64</td></tr>
 </table><p>
 </body>
 </html>

@@ -70,9 +70,10 @@ public class SearchAndAddToCartTest extends BaseClass {
 
 	@AfterTest
 	public void closeBrowser() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.close();
 		ExtentReport.getInstance().flush();
+		Thread.sleep(2000);
+		driver.quit();
+		
 	}
 
 }

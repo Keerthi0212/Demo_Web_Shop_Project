@@ -67,9 +67,10 @@ public class RegisterTestForNewUser extends BaseClass{
 	}
 	@AfterTest
 	public void closeBrowser() throws InterruptedException {
+		ExtentReport.getInstance().flush();
 		Thread.sleep(2000);
 		driver.quit();
-		ExtentReport.getInstance().flush();
+		
 	}
 	
 
