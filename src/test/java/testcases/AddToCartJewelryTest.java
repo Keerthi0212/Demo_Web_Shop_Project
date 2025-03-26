@@ -54,9 +54,10 @@ public class AddToCartJewelryTest extends BaseClass {
 		cart.viewAs();
 		cart.filterBy();
 		cart.addjewelryToCart();
-		ExtentReport.createTest("product details").info("Product details are selected");
 		screenshot();
+		ExtentReport.createTest("product details").info("Product details are selected");
 		//adding second product
+		Thread.sleep(1000);
 		cart.addSecProductToCart();
 		cart.selectMaterial().sendKeys(Keys.ARROW_DOWN,"Silver (1 mm)",Keys.ENTER);
 		cart.enterLength();
@@ -66,11 +67,14 @@ public class AddToCartJewelryTest extends BaseClass {
 		cart.addToCartSec();
 		screenshot();
 		WebElement msg = cart.successMessage();
+		try {
 		if(msg.isDisplayed()) {
 			System.out.println(msg.getText());
 			Assert.assertTrue(true);
 			ExtentReport.createTest("Add to cart test case").log(Status.PASS, "Add to cart test case successfully completed");
-		}else {
+		}
+		}catch(Exception e) {
+			e.printStackTrace();
 			Assert.assertTrue(false);
 			ExtentReport.createTest("Add to cart test case").log(Status.FAIL, "Add to cart test case failed");
 		}

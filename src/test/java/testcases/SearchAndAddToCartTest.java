@@ -36,7 +36,7 @@ public class SearchAndAddToCartTest extends BaseClass {
 
 	@Test
 	@Parameters ({"browser"})
-	public void testSearchAndAddToCart(String browser) throws InterruptedException {
+	public void testSearchAndAddToCart(String browser) throws InterruptedException, IOException {
 		invokeBrowser(browser);
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -50,6 +50,7 @@ public class SearchAndAddToCartTest extends BaseClass {
 		src.selectManufacture();
 		src.enterFromPrice();
 		src.enterToPrice();
+		screenshot();
 		src.clickOnSearchBtn();
 		try {
 			AddToCartJewelryPage cart = new AddToCartJewelryPage(driver);

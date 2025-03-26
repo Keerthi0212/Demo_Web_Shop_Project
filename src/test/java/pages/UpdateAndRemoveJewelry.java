@@ -24,6 +24,7 @@ public class UpdateAndRemoveJewelry {
 	@FindBy(xpath = "//input[@class='qty-input']") WebElement quantity;
 	@FindBy(xpath = "//a[text()='Edit']") WebElement edit;
 	@FindBy(name = "continueshopping") WebElement continueShop;
+	@FindBy(xpath = "//div[@class='order-summary-content']") WebElement msg;
 	
 	public void clickOnUpdate() {
 		update.click();
@@ -34,6 +35,7 @@ public class UpdateAndRemoveJewelry {
 	}
 	
 	public void editQuantity() {
+		//fluent wait
 		Wait<WebDriver> wait = new FluentWait<>(driver)
 		        .withTimeout(Duration.ofSeconds(40))
 		        .pollingEvery(Duration.ofMillis(500))
@@ -50,6 +52,9 @@ public class UpdateAndRemoveJewelry {
 	
 	public void clickOnContinueShopping() {
 		continueShop.click();
+	}
+	public WebElement getDisplayMsg() {
+		return msg;
 	}
 	
 

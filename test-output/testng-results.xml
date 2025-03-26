@@ -1,57 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="21" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T10:07:00 IST" name="Suite" finished-at="2025-03-26T10:10:04 IST" duration-ms="183814">
+  <suite started-at="2025-03-26T12:42:53 IST" name="Suite" finished-at="2025-03-26T12:43:28 IST" duration-ms="34885">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.LoginStepsRunner@5c2375a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@60129b9a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@3bd323e9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-26T10:07:00 IST" name="Test" finished-at="2025-03-26T10:10:04 IST" duration-ms="183814">
-      <class name="testcases.RegisterTestForNewUser">
-        <test-method is-config="true" signature="clearAllureResults()[pri:0, instance:testcases.RegisterTestForNewUser@6cc558c6]" started-at="2025-03-26T10:07:00 IST" name="clearAllureResults" finished-at="2025-03-26T10:07:00 IST" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearAllureResults -->
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.RegisterTestForNewUser@6cc558c6]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="testRegisterPage(java.lang.String)[pri:1, instance:testcases.RegisterTestForNewUser@6cc558c6]" started-at="2025-03-26T10:07:00 IST" name="testRegisterPage" finished-at="2025-03-26T10:07:20 IST" duration-ms="19351" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.RegisterTestForNewUser@6cc558c6]" started-at="2025-03-26T10:09:59 IST" name="closeBrowser" finished-at="2025-03-26T10:10:01 IST" duration-ms="2074" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="generateAllureReport()[pri:0, instance:testcases.RegisterTestForNewUser@6cc558c6]" started-at="2025-03-26T10:10:04 IST" name="generateAllureReport" finished-at="2025-03-26T10:10:12 IST" duration-ms="8257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateAllureReport -->
-      </class> <!-- testcases.RegisterTestForNewUser -->
+    <test started-at="2025-03-26T12:42:53 IST" name="Test" finished-at="2025-03-26T12:43:28 IST" duration-ms="34885">
       <class name="myrunner.RemoveJewelryFromCartRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@60129b9a]" started-at="2025-03-26T10:09:14 IST" name="setUpClass" finished-at="2025-03-26T10:09:14 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@3bd323e9]" started-at="2025-03-26T12:42:54 IST" name="setUpClass" finished-at="2025-03-26T12:42:55 IST" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@24731caf]]>
+                <![CDATA[org.testng.TestRunner@6e8fdd19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@60129b9a]" started-at="2025-03-26T10:09:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T10:09:37 IST" duration-ms="22414" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@3bd323e9]" started-at="2025-03-26T12:42:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T12:43:28 IST" duration-ms="33549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,170 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@60129b9a]" started-at="2025-03-26T10:09:37 IST" name="tearDownClass" finished-at="2025-03-26T10:09:37 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myrunner.RemoveJewelryFromCartRunner@3bd323e9]" started-at="2025-03-26T12:43:28 IST" name="tearDownClass" finished-at="2025-03-26T12:43:28 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- myrunner.RemoveJewelryFromCartRunner -->
-      <class name="testcases.RegisterTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.RegisterTest@15713d56]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="testRegisterPage(java.lang.String)[pri:1, instance:testcases.RegisterTest@15713d56]" started-at="2025-03-26T10:07:20 IST" name="testRegisterPage" finished-at="2025-03-26T10:07:31 IST" duration-ms="11491" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.RegisterTest@15713d56]" started-at="2025-03-26T10:09:57 IST" name="closeBrowser" finished-at="2025-03-26T10:09:59 IST" duration-ms="2054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.RegisterTest -->
-      <class name="testcases.CheckOutPageTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.CheckOutPageTest@7c8c9a05]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="checkOutTest(java.lang.String)[pri:0, instance:testcases.CheckOutPageTest@7c8c9a05]" started-at="2025-03-26T10:08:27 IST" name="checkOutTest" finished-at="2025-03-26T10:09:14 IST" duration-ms="46626" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkOutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.CheckOutPageTest@7c8c9a05]" started-at="2025-03-26T10:09:51 IST" name="closeBrowser" finished-at="2025-03-26T10:09:53 IST" duration-ms="2078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.CheckOutPageTest -->
-      <class name="testcases.SearchAndAddToCartTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.SearchAndAddToCartTest@26ceffa8]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="testSearchAndAddToCart(java.lang.String)[pri:0, instance:testcases.SearchAndAddToCartTest@26ceffa8]" started-at="2025-03-26T10:07:55 IST" name="testSearchAndAddToCart" finished-at="2025-03-26T10:08:08 IST" duration-ms="13196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchAndAddToCart -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.SearchAndAddToCartTest@26ceffa8]" started-at="2025-03-26T10:10:01 IST" name="closeBrowser" finished-at="2025-03-26T10:10:04 IST" duration-ms="2020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.SearchAndAddToCartTest -->
-      <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.LoginPageTest@63f259c3]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="loginTest(java.lang.String)[pri:0, instance:testcases.LoginPageTest@63f259c3]" started-at="2025-03-26T10:07:31 IST" name="loginTest" finished-at="2025-03-26T10:07:40 IST" duration-ms="9043" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LoginPageTest@63f259c3]" started-at="2025-03-26T10:09:53 IST" name="closeBrowser" finished-at="2025-03-26T10:09:55 IST" duration-ms="2186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.LoginPageTest -->
-      <class name="myrunner.LoginStepsRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myrunner.LoginStepsRunner@5c2375a9]" started-at="2025-03-26T10:07:40 IST" name="setUpClass" finished-at="2025-03-26T10:07:43 IST" duration-ms="2247" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@24731caf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.LoginStepsRunner@5c2375a9]" started-at="2025-03-26T10:07:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T10:07:55 IST" duration-ms="12436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["validate the login functionality with Invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["feature is to check the functionality of Demo Web Shop"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myrunner.LoginStepsRunner@5c2375a9]" started-at="2025-03-26T10:07:55 IST" name="tearDownClass" finished-at="2025-03-26T10:07:55 IST" duration-ms="60" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- myrunner.LoginStepsRunner -->
-      <class name="testcases.LogoutWithValidLogin">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.LogoutWithValidLogin@d41f816]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="logoutTest(java.lang.String)[pri:0, instance:testcases.LogoutWithValidLogin@d41f816]" started-at="2025-03-26T10:09:37 IST" name="logoutTest" finished-at="2025-03-26T10:09:48 IST" duration-ms="11221" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LogoutWithValidLogin@d41f816]" started-at="2025-03-26T10:09:55 IST" name="closeBrowser" finished-at="2025-03-26T10:09:57 IST" duration-ms="2056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.LogoutWithValidLogin -->
-      <class name="testcases.AddToCartJewelryTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:testcases.AddToCartJewelryTest@600b90df]" started-at="2025-03-26T10:07:00 IST" name="readData" finished-at="2025-03-26T10:07:00 IST" duration-ms="453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method signature="purchaseJewelry(java.lang.String)[pri:1, instance:testcases.AddToCartJewelryTest@600b90df]" started-at="2025-03-26T10:08:08 IST" name="purchaseJewelry" finished-at="2025-03-26T10:08:27 IST" duration-ms="19032" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseJewelry -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.AddToCartJewelryTest@600b90df]" started-at="2025-03-26T10:09:48 IST" name="closeBrowser" finished-at="2025-03-26T10:09:51 IST" duration-ms="2992" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.AddToCartJewelryTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,6 +3,8 @@ package stepdef;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.testng.Assert;
+
 import com.aventstack.extentreports.Status;
 
 import base.BaseClass;
@@ -38,11 +40,12 @@ public class RemoveSteps extends BaseClass{
 	}
 	
 	@Then("user should update cart product")
-	public void user_should_update_cart_product() throws InterruptedException {
+	public void user_should_update_cart_product() throws InterruptedException, IOException {
 		remove = new UpdateAndRemoveJewelry(driver);
 		remove.editQuantity();
 		Thread.sleep(1000);
 		remove.clickOnUpdate();
+		screenshot();
 	}
 
 	@Then("user should remove the product")
@@ -52,7 +55,18 @@ public class RemoveSteps extends BaseClass{
 	   Thread.sleep(1000);
 	   remove.clickOnUpdate();
 	   screenshot();
-	   ExtentReport.createTest("remove test case").log(Status.PASS, "Product Removed Successfully Completed");
+	   try {
+		  if(remove.getDisplayMsg().isDisplayed()) {
+			  String msg = remove.getDisplayMsg().getText();
+			  System.out.println("Removed Message: "+msg);
+			  Assert.assertTrue(true);
+			  ExtentReport.createTest("remove test case").log(Status.PASS, "Product Removed Successfully Completed");
+		  }
+	   }catch(Exception e) {
+		   e.printStackTrace();
+		   Assert.assertTrue(false);
+	   ExtentReport.createTest("remove test case").log(Status.FAIL, "Product Remove failed");
+	}
 	}
 
 }

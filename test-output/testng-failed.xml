@@ -4,15 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.AddToCartJewelryTest">
+      <class name="myrunner.RemoveJewelryFromCartRunner">
         <methods>
-          <include name="clearAllureResults"/>
-          <include name="generateAllureReport"/>
-          <include name="purchaseJewelry" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="readData"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- testcases.AddToCartJewelryTest -->
+      </class> <!-- myrunner.RemoveJewelryFromCartRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

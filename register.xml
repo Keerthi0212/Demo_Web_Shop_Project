@@ -11,8 +11,8 @@
             <class name="testcases.SearchAndAddToCartTest" />
 			<class name="testcases.AddToCartJewelryTest" /> 
 			<class name="testcases.CheckOutPageTest" />
-			 <class name="myrunner.RemoveJewelryFromCartRunner" />
-			 <class name="testcases.LogoutWithValidLogin" />
+			<class name="myrunner.RemoveJewelryFromCartRunner" />
+			<class name="testcases.LogoutWithValidLogin" />
 		</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
