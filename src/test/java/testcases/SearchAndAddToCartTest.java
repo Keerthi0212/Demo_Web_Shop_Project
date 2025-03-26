@@ -64,6 +64,7 @@ public class SearchAndAddToCartTest extends BaseClass {
 			ExtentReport.createTest("search product test").log(Status.PASS,"Searching product and then add to cart test succesfully completed");
 		}catch(Exception e) {
 			e.printStackTrace();
+			ExtentReport.createTest("search product test").log(Status.FAIL,"Searching product and then add to cart test failed");
 		}
 
 	}
