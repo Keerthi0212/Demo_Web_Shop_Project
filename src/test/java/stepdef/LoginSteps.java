@@ -1,21 +1,12 @@
 package stepdef;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
-
 import com.aventstack.extentreports.Status;
-
 import base.BaseClass;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.LoginPageInvalid;
 import utility.ExtentReport;

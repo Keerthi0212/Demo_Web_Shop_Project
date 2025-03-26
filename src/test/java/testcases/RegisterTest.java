@@ -4,15 +4,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
-
 import base.BaseClass;
 import pages.RegisterPage;
 import utility.ExcelReader;

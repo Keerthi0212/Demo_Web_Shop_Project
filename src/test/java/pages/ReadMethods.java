@@ -8,8 +8,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import base.BaseClass;
-
 public class ReadMethods{
 	String url,email,password,coupon,giftCard,pincode;
 	

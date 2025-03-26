@@ -2,11 +2,8 @@ package stepdef;
 
 import java.io.IOException;
 import java.time.Duration;
-
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
-
 import base.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

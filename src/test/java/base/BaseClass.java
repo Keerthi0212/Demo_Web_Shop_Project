@@ -2,7 +2,6 @@ package base;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,11 +10,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
 import com.google.common.io.Files;
-
 import utility.ExtentReport;
-
 
 public class BaseClass {
 	protected static WebDriver driver;

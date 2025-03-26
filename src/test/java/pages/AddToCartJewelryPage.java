@@ -20,6 +20,7 @@ public class AddToCartJewelryPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 
 	private By sortBy = By.id("products-orderby");
 	private By display = By.id("products-pagesize");
